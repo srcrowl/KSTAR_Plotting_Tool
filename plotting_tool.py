@@ -133,6 +133,8 @@ with t2:
         elif manual_kinase_edit == 'Select Specific Kinases':
             kinases_to_keep = st.multiselect('Manually pick kinases to include in analysis', activities.index, key = 'kinases_to_keep')
             kinases_to_drop = [kin for kin in activities.index if kin not in kinases_to_keep]
+        else:
+            kinases_to_drop = None
 
 with t3:
     sort_kinases = st.radio('Sort Kinases:', ['No Sorting', 'By Activity', 'By Hierarchical Clustering'], key = 'sort_kinases', horizontal = True)
