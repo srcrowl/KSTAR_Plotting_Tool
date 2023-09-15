@@ -1,0 +1,5 @@
+kstar
+pandas
+numpy
+matplotlib
+seaborn
